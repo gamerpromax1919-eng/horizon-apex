@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Horizon Apex - Browser Racing Simulator</title>
+<meta name="description" content="Horizon Apex is a 3D racing simulator that runs in your browser, with realistic tire physics.">
+<style>
+*{box-sizing:border-box;margin:0}
+body{font-family:system-ui,sans-serif;background:#07090d;color:#e8ecf2;line-height:1.5}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2rem;background:radial-gradient(circle at 50% 20%,#1d2a44 0,#07090d 65%)}
+h1{font-size:clamp(2.6rem,9vw,6rem);letter-spacing:.05em;font-style:italic;text-transform:uppercase}
+h1 span{color:#ff4d2e}
+.tag{max-width:36rem;margin:1rem 0 2rem;color:#9aa6ba;font-size:1.15rem}
+.btn{display:inline-block;background:#ff4d2e;color:#fff;font-weight:700;font-size:1.2rem;padding:1rem 2.6rem;border-radius:.5rem;text-decoration:none;text-transform:uppercase;letter-spacing:.08em;transition:transform .15s,background .15s}
+.btn:hover{background:#ff6a4f;transform:translateY(-2px)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;max-width:62rem;margin:0 auto;padding:3rem 1.5rem}
+.card{background:#10151d;border:1px solid #1f2836;border-radius:.75rem;padding:1.4rem}
+.card h3{margin-bottom:.4rem;color:#ff4d2e}
+.card p{color:#9aa6ba;font-size:.95rem}
+footer{text-align:center;padding:2rem;color:#5d6a80;font-size:.9rem}
+footer a{color:#9aa6ba}
+</style>
+</head>
+<body>
+<section class="hero">
+<h1>Horizon <span>Apex</span></h1>
+<p class="tag">A 3D racing simulator that runs right in your browser. Real tire physics, AI rivals and ghost replays.</p>
+<a class="btn" href="./play/">Launch Game</a>
+</section>
+<section class="features">
+<div class="card"><h3>Realistic physics</h3><p>A fixed 120 Hz physics step with a Pacejka tire model for believable grip and slides.</p></div>
+<div class="card"><h3>AI racers</h3><p>Race against computer-driven rivals on the track.</p></div>
+<div class="card"><h3>Replays and ghosts</h3><p>Review your laps and chase your own ghost.</p></div>
+<div class="card"><h3>Play instantly</h3><p>No install. Open the page and drive.</p></div>
+</section>
+<footer>Built with React Three Fiber, Three.js and Rapier. <a href="https://github.com/gamerpromax1919-eng/apex-horizen-">Game source</a></footer>
+</body>
+</html>
